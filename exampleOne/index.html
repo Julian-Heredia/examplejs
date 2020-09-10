@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
-    <script src="js/variables.js"></script>
+    <!-- <title>Variables</title> -->
+    <title>Operacion Aritmeticas</title>
+    <!-- <script src="js/variables.js"></script> -->
+    <script src="js/operArit.js"></script>
 </head>
 <body>
-    
-
-
+    <h1>Formulario Operaciones Aritmeticas</h1>
+    <form>
+        <label for="nUno">Numero Uno</label>
+        <input type="text" name="nUno" id="nUno">
+        <br><br>
+        <label for="nDos">Numero Dos</label>
+        <input type="text" name="nDos" id="nDos">
+        <br><br>
+        <button type="button" onclick="sumar()">Sumar</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+        <p>
+            Resultado
+            <textarea id="resulOperacion" cols="9" rows="2"></textarea>
+        </p>
+    </form>
+    <hr>
+    <h2>Formulario Para Calcular Base De Un Triangulo</h2>
+    <form>
+        <label for="Base">Base</label>
+        <input type="text" name="Base" id="Base">
+        <br><br>
+        <label for="Altura">Altura</label>
+        <input type="text" name="Altura" id="Altura">
+        <br><br>
+        <button type="button" onclick="calcular_Area_Triangulo()">Calcular</button>
+        <p>
+            Resultado
+            <textarea id="resulOperacionT" cols="9" rows="2"></textarea>
+        </p>
+    </form>
+    <!-- <hr>
+    <h2>Formulario Para Calcular Base De Un Circulo</h2>
+    <form>
+        <label for="Base">Base</label>
+        <input type="text" name="Base" id="Base">
+        <br><br>
+        <label for="Altura">Altura</label>
+        <input type="text" name="Altura" id="Altura">
+        <br><br>
+        <button type="button" onclick="sumar()">Calcular</button>
+        <p>
+            Resultado
+            <textarea id="resulOperacionT" cols="9" rows="2"></textarea>
+        </p>
+    </form> -->
 </body>
 </html>
