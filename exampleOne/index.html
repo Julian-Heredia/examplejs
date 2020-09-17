@@ -95,17 +95,51 @@
 </form>
 </section>
 <hr>
-<section>
-<h3>Ejemplo Hotel</h3>
+<h3>Functions & Parameters</h3>
 <form>
-    <label for="CPersonas">Cantidad de personas</label>
-    <input type="text" name="CPersonas" id="CPersonas">
-    <br><br>
-    <label for="DHospedacion">Dias de hospedación</label>
-    <input type="text" name="DHospedacion" id="DHospedacion">
-    <br><br>
-<button type="button" onclick="prenderApagar(1)">Pagar</button>
+<button type="button" onclick="prenderApagar(1)">Prender</button>
+<button type="button" onclick="prenderApagar(0)">Apagar</button>
 </form>
+</section>
+<hr>
+<section>
+<h2>Bucle For</h2>
+<script>
+    // for (let people = 1; people <= 3; people++) {
+    //     let age =prompt("Enter Age: ")
+
+    //     const AgeParameter = 18
+        
+    //     let message = (age >= AgeParameter) ? "Adult" : "Younger"
+        
+    //     alert(message)
+    // }
+    // let cars = ["Toyota","Chevrolet", "Mazda", "Suzuki"]
+    
+    // for (let brands = 0; brands < cars.length; brands++) {
+    //     const viewCars = `${cars[brands]} <br>`
+    //     document.write(viewCars)
+    // }
+    
+    // document.write(`<br> ${cars[2]}`)
+</script>
+</section>
+<hr>
+<section>
+<h2>Bucle While</h2>
+<script>
+let student = () =>{
+    let studentName = ""
+    const paramName = "NN"
+
+    while (studentName.toUpperCase() != paramName) {
+        studentName = prompt("Enter student name")
+
+        alert(`Your name is ${studentName} registered!!!`)
+    }
+}
+student()
+</script>
 </section>
 </body>
 </html>
