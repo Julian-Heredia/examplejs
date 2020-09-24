@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
      <script src="js/variables.js"></script>
      <script src="js/operArit.js"></script> -->
 </head>
+
 <body>
-     <!-- <h1>Formulario Operaciones Aritmeticas</h1>
+    <!-- <h1>Formulario Operaciones Aritmeticas</h1>
     <form>
         <label for="nUno">Numero Uno</label>
         <input type="text" name="nUno" id="nUno">
@@ -62,84 +64,190 @@
     </form>
     <br><br>
     <section>
-    <h3>If Anidado</h3>
-    <form>
-        <label for="edadP">Edad</label>
-        <input type="text" name="edadP" id="edadP">
-        <br><br>
-        <label for="estatura">Estatura</label>
-        <input type="text" name="estatura" id="estatura">
-        <br><br>
-        <label for="peso">Peso</label>
-        <input type="text" name="peso" id="peso">
-        <br><br>
-        <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
-    </form>
-</section>
-<hr>
-<section>
-<h3>If & Case</h3>
-<form>
-    <label for="productName">Product Name</label>
-    <input type="text" name="productName" id="productName">
+        <h3>If Anidado</h3>
+        <form>
+            <label for="edadP">Edad</label>
+            <input type="text" name="edadP" id="edadP">
+            <br><br>
+            <label for="estatura">Estatura</label>
+            <input type="text" name="estatura" id="estatura">
+            <br><br>
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso">
+            <br><br>
+            <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h3>If & Case</h3>
+        <form>
+            <label for="productName">Product Name</label>
+            <input type="text" name="productName" id="productName">
+            <br><br>
+            <button type="button" onclick="mostrarMensajeTres()">Price</button>
+        </form>
+    </section>
     <br><br>
-<button type="button" onclick="mostrarMensajeTres()">Price</button>
-</form>
-</section>
-<br><br>
-<section>
-<h3>Functions & Parameters</h3>
-<form>
-<button type="button" onclick="prenderApagar(1)">Prender</button>
-<button type="button" onclick="prenderApagar(0)">Apagar</button>
-</form>
-</section>
-<hr>
-<h3>Functions & Parameters</h3>
-<form>
-<button type="button" onclick="prenderApagar(1)">Prender</button>
-<button type="button" onclick="prenderApagar(0)">Apagar</button>
-</form>
-</section>
-<hr>
-<section>
-<h2>Bucle For</h2>
-<script>
+    <section>
+        <h3>Functions & Parameters</h3>
+        <form>
+            <button type="button" onclick="prenderApagar(1)">Prender</button>
+            <button type="button" onclick="prenderApagar(0)">Apagar</button>
+        </form>
+    </section>
+    <hr>
+    <h3>Functions & Parameters</h3>
+    <form>
+        <button type="button" onclick="prenderApagar(1)">Prender</button>
+        <button type="button" onclick="prenderApagar(0)">Apagar</button>
+    </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Bucle For</h2>
+        <script>
     // for (let people = 1; people <= 3; people++) {
     //     let age =prompt("Enter Age: ")
 
     //     const AgeParameter = 18
-        
+
     //     let message = (age >= AgeParameter) ? "Adult" : "Younger"
-        
+
     //     alert(message)
     // }
     // let cars = ["Toyota","Chevrolet", "Mazda", "Suzuki"]
-    
+
     // for (let brands = 0; brands < cars.length; brands++) {
     //     const viewCars = `${cars[brands]} <br>`
     //     document.write(viewCars)
     // }
-    
+
     // document.write(`<br> ${cars[2]}`)
-</script>
-</section>
-<hr>
-<section>
-<h2>Bucle While</h2>
-<script>
-let student = () =>{
-    let studentName = ""
-    const paramName = "NN"
+        </script>
+    </section>
+    <hr>
+    <section>
+        <h2>Bucle While</h2>
+        <script>
+// let student = () =>{
+//     let studentName = ""
+//     const paramName = "NN"
 
-    while (studentName.toUpperCase() != paramName) {
-        studentName = prompt("Enter student name")
+//     while (studentName.toUpperCase() != paramName) {
+//         studentName = prompt("Enter student name")
 
-        alert(`Your name is ${studentName} registered!!!`)
-    }
-}
-student()
-</script>
-</section>
+//         alert(`Your name is ${studentName} registered!!!`)
+//     }
+// }
+// student()
+        </script>
+    </section>
+    <br><br>
+    <section>
+        <h2>Bucle do While</h2>
+        <!-- <script>
+            let people = () => {
+                let age = 0, paramAge = 0
+                let count = -1
+                let totalAge = 0, averangeAge = 0
+
+                do {
+                    age = parseInt(prompt('Enter age'))
+
+                    if (age <= 18) {
+                        alert('I am sorry!!')
+                    } else {
+                        alert('Welcome!!')
+                    }
+
+                    //totalAge = totalAge + age
+
+                    totalAge += age
+
+                    count++
+
+                } while (age != paramAge);
+
+                averangeAge = parseInt(totalAge / count)
+
+                console.log(`Cant: ${count}, Total: ${totalAge}, & Promedy Age: ${averangeAge}`)
+            }
+            people()       
+        </script> -->
+    </section>
+    <!-- <section>
+        <h2>Bucle do While</h2>
+        <script>
+            let tienda = () => {
+                let preciozapato = 350000
+                let zapatos = 0, dejarDeComprar = 0
+                let count = -1
+                let total = 0, promedio = 0
+
+                do {
+                    zapatos = parseInt(prompt('¿Cuantos zapatos comprarás?'))
+
+                    if (zapatos <= 1) {
+                        alert('Vuelva pronto!')
+                    } else {
+                        alert('Gracias por su compra!')
+                    }
+
+                    total += zapatos * preciozapato
+
+                    count++
+
+                } while (zapatos != dejarDeComprar);
+
+                promedio = parseInt(total / count)
+
+                console.log(`Veces compradas: ${count}, Zapatos comprados: ${count} , Precio total: ${total}, & Promedio: ${promedio}`)
+
+            }
+            tienda()       
+        </script>
+    </section> -->
+    <section>
+    <h2>bucle forEchach</h2>
+    <script>
+        //example one
+        // let ranks = ['A','B','C']
+        // ranks.forEach(function (e) {
+        //     console.log(e);
+        //     document.write(e);
+        // });
+
+        //example two
+        function Counter() {
+            this.count = 0
+            let self = this
+
+            return{
+                increase: function() {
+                    self.count++
+                },
+                current: function() {
+                    return self.count
+                },
+                reset: function () {
+                    self.count = 0
+                }
+            }
+        }
+        let counter = new Counter()
+        let numbers = [1, 2, 3]
+        let sum = 0
+        numbers.forEach(function (e) {
+            sum += e
+            this.increase()
+        }, counter)
+
+        console.log(sum)
+        console.log(counter.current())
+    //Imprimir
+    </script>
+    </section>
 </body>
+
 </html>
